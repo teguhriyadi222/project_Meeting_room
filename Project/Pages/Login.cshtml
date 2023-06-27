@@ -1,0 +1,47 @@
+@page
+@model Login.Pages.LoginModel
+@{
+    Layout = "/Pages/Shared/_LoginLayout.cshtml";
+}
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="container-fluid" >
+    <div class="card card0 border-0 ">
+        <div class="row d-flex">
+            <div class="col-lg-6">
+                <div class="card1 pb-5">
+                    <div class="row px-3 justify-content-center mt-4 mb-4 border-line">
+                        <img src="https://www.clipartmax.com/png/full/49-494520_board-room-projection-system-meeting-room-booking-icon.png" class="image">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card2 card border-0 px-4 py-5">
+                    <div class="row px-3">
+                        <img src="https://fmlx.b-cdn.net/wp-content/uploads/2018/01/final-logo-1024x124.png" class="logo" alt="Logo">
+                    </div>
+                    <div class="row px-3">
+                        <p class="mb-3 text-center">Meeting Room Boking System</p>
+                    </div>
+                    <div class="row px-3">
+                        <label class="mb-1">
+                            <h6 class="mb-0 text-sm">Email Address</h6>
+                        </label>
+                        <input class="mb-2 input" type="text" name="email" placeholder="Enter a valid email address">
+                    </div>
+                    <div class="row px-3">
+                        <label class="label mb-0">
+                            <h6 class="mb-0 text-sm">Password</h6>
+                        </label>
+                        <input type="password" name="password" placeholder="Enter password" class="input">
+                    </div>
+                    <div class="row mb-3 px-3">
+                        <button type="submit" class="btn btn-blue text-center">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
