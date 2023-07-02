@@ -11,19 +11,24 @@ namespace Login.Pages
         [BindProperty]
         public string Password { get; set; }
 
+        public IActionResult OnGet()
+        {
+            // Menghapus pesan error dari TempData saat memuat halaman
+            TempData.Remove("ErrorMessage");
+
+            return Page();
+        }
+
         public IActionResult OnPost()
         {
-            // Logika autentikasi di sini (verifikasi username dan password)
-
             if (Username == "admin" && Password == "admin123")
             {
-                // Autentikasi berhasil, redirect ke halaman lain
-                return RedirectToPage("/Home");
+                return RedirectToPage("/Privacy");
             }
             else
             {
-                // Autentikasi gagal, tampilkan pesan kesalahan
-                ModelState.AddModelError(string.Empty, "Username atau password salah.");
+                // Menyimpan pesan error ke TempData
+                TempData["ErrorMessage"] = "Username atau password salah.";
                 return Page();
             }
         }

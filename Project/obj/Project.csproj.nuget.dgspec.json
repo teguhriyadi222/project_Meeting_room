@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\Pictures\\project_Meeting_room\\project\\Project.csproj": {}
+    "C:\\Users\\ASUS\\Pictures\\project_Meeting_room\\Project\\Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\Pictures\\project_Meeting_room\\project\\Project.csproj": {
+    "C:\\Users\\ASUS\\Pictures\\project_Meeting_room\\Project\\Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Pictures\\project_Meeting_room\\project\\Project.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Pictures\\project_Meeting_room\\Project\\Project.csproj",
         "projectName": "Project",
-        "projectPath": "C:\\Users\\ASUS\\Pictures\\project_Meeting_room\\project\\Project.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Pictures\\project_Meeting_room\\Project\\Project.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Pictures\\project_Meeting_room\\project\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Pictures\\project_Meeting_room\\Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config"
