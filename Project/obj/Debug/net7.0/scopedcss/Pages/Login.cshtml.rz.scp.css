@@ -8,8 +8,8 @@
 
 .card2[b-wu0a6q50pk] {
     margin: 20px 20px 20px 20px;
-    
 }
+
 .label[b-wu0a6q50pk] {
     margin-bottom: 0;
     display: inline-block;
@@ -90,6 +90,7 @@ input:focus[b-wu0a6q50pk], textarea:focus[b-wu0a6q50pk] {
 }
 
 button:focus[b-wu0a6q50pk] {
+
     -moz-box-shadow: none !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;

@@ -8,8 +8,8 @@
 
 .card2 {
     margin: 20px 20px 20px 20px;
-    
 }
+
 .label {
     margin-bottom: 0;
     display: inline-block;
@@ -90,6 +90,7 @@ input:focus, textarea:focus {
 }
 
 button:focus {
+
     -moz-box-shadow: none !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;

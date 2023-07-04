@@ -1,31 +1,55 @@
 /* _content/Project/Pages/Booking.cshtml.rz.scp.css */
 
-
 .title[b-d5vw4x6be6] {
     margin-left: 2rem;
 }
-.container[b-d5vw4x6be6] {
+
+.container[b-d5vw4x6be6]{
     margin-left: 2rem;
     height: 25rem;
     width: 95%;
     background-color: rgb(250, 250, 250);
     box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
     padding-top: 0.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
-
-.container1[b-d5vw4x6be6] {
-    width: 46%;
-    height: auto;
-    padding-bottom: 20px;
-}
-
-.container2[b-d5vw4x6be6] {
-
+.container3[b-d5vw4x6be6] {
+    display: grid;
+    grid-template-columns: 46% auto;
+    grid-gap: 1rem;
+  }
+  
+  .container1[b-d5vw4x6be6] {
     margin-top: 1rem;
-    padding: 1rem;
-    background-color: lightblue;
-    
+  }
+  
+  .container2[b-d5vw4x6be6] {
+   margin-top: 1rem;
+  }
+  
+  .btn-blue[b-d5vw4x6be6] {
+    background-color: #F7A246;
+    width: 8rem;
+    height: 2.5rem;
+    color: #fff;
+    border-radius: 2px;
+    border-radius: 8px;
 }
+
+.btn[b-d5vw4x6be6] {
+    
+    padding-right: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.btn-blue:hover[b-d5vw4x6be6] {
+    background-color: #000;
+    cursor: pointer;
+}
+  
 /* _content/Project/Pages/Login.cshtml.rz.scp.css */
 
 
@@ -37,8 +61,8 @@
 
 .card2[b-wu0a6q50pk] {
     margin: 20px 20px 20px 20px;
-    
 }
+
 .label[b-wu0a6q50pk] {
     margin-bottom: 0;
     display: inline-block;
@@ -119,6 +143,7 @@ input:focus[b-wu0a6q50pk], textarea:focus[b-wu0a6q50pk] {
 }
 
 button:focus[b-wu0a6q50pk] {
+
     -moz-box-shadow: none !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;

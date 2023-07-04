@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Batch 2\\Videos\\project_Meeting_room\\Project\\Project.csproj": {}
+    "C:\\Users\\Batch 2\\Videos\\project_Meeting_room\\project\\Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Batch 2\\Videos\\project_Meeting_room\\Project\\Project.csproj": {
+    "C:\\Users\\Batch 2\\Videos\\project_Meeting_room\\project\\Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Batch 2\\Videos\\project_Meeting_room\\Project\\Project.csproj",
+        "projectUniqueName": "C:\\Users\\Batch 2\\Videos\\project_Meeting_room\\project\\Project.csproj",
         "projectName": "Project",
-        "projectPath": "C:\\Users\\Batch 2\\Videos\\project_Meeting_room\\Project\\Project.csproj",
+        "projectPath": "C:\\Users\\Batch 2\\Videos\\project_Meeting_room\\project\\Project.csproj",
         "packagesPath": "C:\\Users\\Batch 2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Batch 2\\Videos\\project_Meeting_room\\Project\\obj\\",
+        "outputPath": "C:\\Users\\Batch 2\\Videos\\project_Meeting_room\\project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
