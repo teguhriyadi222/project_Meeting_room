@@ -33,16 +33,16 @@
             <ul class="list-unstyled components">
                 <p>Booking Room System</p>
                 <li>
-                    <a href="#" title="Home">
+                    <a href="/Home" title="Home">
                         <i class="fas fa-home"></i><span class="menu-text">Home</span>
                     </a>
                 </li>
                 <li>
-                    <a href="/Booking" title="Booking"> 
+                    <a href="/Booking" title="Booking">
                         <i class="fas fa-calendar"></i><span class="menu-text">Booking</span>
                     </a>
                 </li>
-                 <li>
+                <li>
                     <a href="#" title="Search">
                         <i class="fas fa-search"></i><span class="menu-text">Search</span>
                     </a>
@@ -84,9 +84,14 @@
                                         style="width: 40px;" alt="Avatar" />
                                 </div>
                                 <div class="user-details">
-                                    <span class="username">Username</span>
+                                    <span class="username">@ViewData["Username"]</span>
                                     <span class="role">Role</span>
                                 </div>
+                                <script>
+                                    var user = @ViewData["Username"];
+                                    console.log("Username: " + user);
+                                </script>
+
                             </li>
                         </ul>
                     </div>
