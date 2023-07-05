@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "E:\\adam\\BootcampFMLX\\project_Meeting_room\\Project\\Project.csproj": {}
+    "/home/tanshaella/Documents/finalproject/project_Meeting_room/Project/Project.csproj": {}
   },
   "projects": {
-    "E:\\adam\\BootcampFMLX\\project_Meeting_room\\Project\\Project.csproj": {
+    "/home/tanshaella/Documents/finalproject/project_Meeting_room/Project/Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\adam\\BootcampFMLX\\project_Meeting_room\\Project\\Project.csproj",
+        "projectUniqueName": "/home/tanshaella/Documents/finalproject/project_Meeting_room/Project/Project.csproj",
         "projectName": "Project",
-        "projectPath": "E:\\adam\\BootcampFMLX\\project_Meeting_room\\Project\\Project.csproj",
-        "packagesPath": "C:\\Users\\ADAM ARDI\\.nuget\\packages\\",
-        "outputPath": "E:\\adam\\BootcampFMLX\\project_Meeting_room\\Project\\obj\\",
+        "projectPath": "/home/tanshaella/Documents/finalproject/project_Meeting_room/Project/Project.csproj",
+        "packagesPath": "/home/tanshaella/.nuget/packages/",
+        "outputPath": "/home/tanshaella/Documents/finalproject/project_Meeting_room/Project/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ADAM ARDI\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/tanshaella/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -76,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/7.0.108/RuntimeIdentifierGraph.json"
         }
       }
     }
