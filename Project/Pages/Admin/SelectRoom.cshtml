@@ -1,0 +1,33 @@
+@page
+@model Project.Pages.Admin.SelectRoom
+@{
+    ViewData["Title"] = "SelectRoom";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <table class="table">
+    <thead>
+        <tr>
+            <th>
+                Room Name
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Rooms) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Summary)
+            </td>
+            <td>
+                <a asp-page="/Admin/EditRoom" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="/Admin/DeleteRoom" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+</div>
