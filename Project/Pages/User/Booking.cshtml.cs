@@ -21,7 +21,7 @@ namespace Project.Pages.User
             CalendarList calendarList = service.CalendarList.List().Execute();
             IEnumerable<CalendarListEntry> roomList = calendarList.Items.Where(c => c.Description != null);
             roomList = roomList.Where(c => c.Description.Contains("Ruang"));
-            IEnumerable<string> room = roomList.Select(c => c.Summary).Order();
+            IEnumerable<string> room = roomList.Select(c => c.Summary);
 
             Rooms = new SelectList(room);
 
