@@ -23,7 +23,7 @@ namespace Login.Pages
         {
             if (Username == "admin" && Password == "admin123")
             {
-                return RedirectToPage("/Privacy");
+                return RedirectToPage("/Admin");
             }
             else
             {
