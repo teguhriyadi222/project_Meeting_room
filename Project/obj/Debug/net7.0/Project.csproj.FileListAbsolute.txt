@@ -84,3 +84,14 @@ C:\Users\Batch 2\Videos\project_Meeting_room\Project\obj\Debug\net7.0\Project.pd
 C:\Users\Batch 2\Videos\project_Meeting_room\Project\obj\Debug\net7.0\Project.genruntimeconfig.cache
 C:\Users\Batch 2\Videos\project_Meeting_room\Project\obj\Debug\net7.0\ref\Project.dll
 C:\Users\Batch 2\Videos\project_Meeting_room\Project\obj\Debug\net7.0\scopedcss\Pages\Booking.cshtml.rz.scp.css
+E:\adam\BootcampFMLX\project_Meeting_room\Project\obj\Debug\net7.0\Project.csproj.AssemblyReference.cache
+E:\adam\BootcampFMLX\project_Meeting_room\Project\obj\Debug\net7.0\Project.GeneratedMSBuildEditorConfig.editorconfig
+E:\adam\BootcampFMLX\project_Meeting_room\Project\obj\Debug\net7.0\Project.AssemblyInfoInputs.cache
+E:\adam\BootcampFMLX\project_Meeting_room\Project\obj\Debug\net7.0\Project.AssemblyInfo.cs
+E:\adam\BootcampFMLX\project_Meeting_room\Project\obj\Debug\net7.0\Project.csproj.CoreCompileInputs.cache
+E:\adam\BootcampFMLX\project_Meeting_room\Project\obj\Debug\net7.0\Project.MvcApplicationPartsAssemblyInfo.cache
+E:\adam\BootcampFMLX\project_Meeting_room\Project\obj\Debug\net7.0\Project.RazorAssemblyInfo.cache
+E:\adam\BootcampFMLX\project_Meeting_room\Project\obj\Debug\net7.0\Project.RazorAssemblyInfo.cs
+E:\adam\BootcampFMLX\project_Meeting_room\Project\obj\Debug\net7.0\Project.dll
+E:\adam\BootcampFMLX\project_Meeting_room\Project\obj\Debug\net7.0\refint\Project.dll
+E:\adam\BootcampFMLX\project_Meeting_room\Project\obj\Debug\net7.0\Project.pdb
