@@ -14,6 +14,7 @@ namespace Project.Pages.User
     public class Booking : PageModel
     {
         public SelectList? Rooms { get; set;}
+        public Event NewEvent {get; set;}
         public async Task OnGetAsync()
         {
             var service = GoogleCredential.CreateCredential();
@@ -25,5 +26,17 @@ namespace Project.Pages.User
             Rooms = new SelectList(room);
 
         }
+        public async Task<IActionResult> OnPostAsync()
+        {
+          if (!ModelState.IsValid || NewEvent == null)
+            {
+                return Page();
+            }
+
+            var service = GoogleCredential.CreateCredential();
+            CalendarList calendarList = service.CalendarList.List().Execute();
+
+            return RedirectToPage("./Index");
+        } 
     }
 }
