@@ -7,5 +7,26 @@
 <h1>@ViewData["Title"]</h1>
 
 <div>
-    
+    <div>
+    <h3>Edit this</h3>
+
+    <div class="container1">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Title</label>
+                    <input asp-for="Name" type="Text" class="form-control" id="exampleFormControlInput1" placeholder="Name for new room">
+                </div>
+
+        </div>     
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+            <textarea asp-for="Description" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+    <form method="post">
+        <input type="hidden" asp-for="Id" />
+        <input type="hidden" asp-for="Name" />
+        <input type="hidden" asp-for="Description" />
+        <input type="submit" value="Edit" class="btn btn-primary" /> |
+        <a asp-page="/Admin/SelectRoom">Back to List</a>
+    </form>
 </div>
