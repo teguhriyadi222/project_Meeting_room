@@ -27,7 +27,7 @@ namespace Project.Pages.Admin
             {
                 if (calendar.Summary == Name)
                 {
-                    return RedirectToPage("/Admin/");
+                    return RedirectToPage("/Admin/AddRoom");
                 }
             }
 
