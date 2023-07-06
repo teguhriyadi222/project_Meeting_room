@@ -52,8 +52,7 @@
                 @Html.DisplayFor(modelItem => item.End.DateTime)
             </td>
             <td>
-                <a asp-page="" asp-route-id="@item.Id">Edit</a> |
-                <a asp-page="" asp-route-id="@item.Id">Delete</a>
+                <a asp-page="/Admin/DeleteEvent" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
 }
