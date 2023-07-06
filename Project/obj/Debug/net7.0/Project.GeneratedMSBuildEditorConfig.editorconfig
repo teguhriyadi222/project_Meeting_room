@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = c:\Users\Batch 2\Videos\project_Meeting_room\Project
 build_property._RazorSourceGeneratorDebug = 
 
+[c:/Users/Batch 2/Videos/project_Meeting_room/Project/Pages/Admin/DeleteEvent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRGVsZXRlRXZlbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [c:/Users/Batch 2/Videos/project_Meeting_room/Project/Pages/Admin/DeleteRoom.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRGVsZXRlUm9vbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
