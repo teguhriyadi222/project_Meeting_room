@@ -9,7 +9,7 @@ using GoogleAuth;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Google.Apis.Calendar.v3.Data;
 
-namespace Project.Pages.User
+namespace Project.Pages.Admin
 {
     public class Booking : PageModel
     {

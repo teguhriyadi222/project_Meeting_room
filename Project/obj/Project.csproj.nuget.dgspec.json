@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\adam\\BootcampFMLX\\project_Meeting_room\\Project\\Project.csproj": {}
+    "C:\\Users\\Batch 2\\Videos\\project_Meeting_room\\Project\\Project.csproj": {}
   },
   "projects": {
-    "E:\\adam\\BootcampFMLX\\project_Meeting_room\\Project\\Project.csproj": {
+    "C:\\Users\\Batch 2\\Videos\\project_Meeting_room\\Project\\Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\adam\\BootcampFMLX\\project_Meeting_room\\Project\\Project.csproj",
+        "projectUniqueName": "C:\\Users\\Batch 2\\Videos\\project_Meeting_room\\Project\\Project.csproj",
         "projectName": "Project",
-        "projectPath": "E:\\adam\\BootcampFMLX\\project_Meeting_room\\Project\\Project.csproj",
-        "packagesPath": "C:\\Users\\ADAM ARDI\\.nuget\\packages\\",
-        "outputPath": "E:\\adam\\BootcampFMLX\\project_Meeting_room\\Project\\obj\\",
+        "projectPath": "C:\\Users\\Batch 2\\Videos\\project_Meeting_room\\Project\\Project.csproj",
+        "packagesPath": "C:\\Users\\Batch 2\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Batch 2\\Videos\\project_Meeting_room\\Project\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ADAM ARDI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Batch 2\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -63,8 +66,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -76,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-preview.4.22252.9\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,11 +1,15 @@
 @page
 @model Project.Pages.Admin.AddRoom
 @{
+    Layout = "/Pages/Shared/_LayoutAdmin.cshtml";
+}
+@{
     ViewData["Title"] = "AddRoom";
 }
 
 <h1>@ViewData["Title"]</h1>
 
+<main>
 <div class="container">
     <form method="post">
         <div class="container3">
@@ -26,3 +30,4 @@
         </div>
     </form>
 </div>
+</main>
