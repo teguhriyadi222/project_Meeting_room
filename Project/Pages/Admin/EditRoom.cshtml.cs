@@ -13,7 +13,7 @@ namespace Project.Pages.Admin
 {
     public class EditRoom : PageModel
     {
-        public CalendarListEntry Rooms = new CalendarListEntry();
+        public Calendar Rooms = new Calendar();
         public string? RoomId {get; set;}
         public string Id {get; set;}
         public string? Name {get; set;}
@@ -54,8 +54,11 @@ namespace Project.Pages.Admin
             {
                 if (room.Id == id)
                 {
+                    //Name = room.Summary;
+                    //Description = room.Description;
                     Id = room.Id;
-                    Rooms = room;
+                    Rooms.ETag = room.ETag;
+                    Rooms.Kind = room.Kind;
                     break;
                 }
             }
@@ -64,9 +67,12 @@ namespace Project.Pages.Admin
             {
                 return NotFound();
             }
+            
+            Rooms.Id = Id;
             Rooms.Summary = Name;
             Rooms.Description = Description;
-            service.CalendarList.Update(Rooms, Id).Execute();
+            Console.WriteLine("summary = " + Name);
+            service.Calendars.Update(Rooms, Id).Execute();
             return RedirectToPage("/Admin/SelectRoom");
         }
     }
