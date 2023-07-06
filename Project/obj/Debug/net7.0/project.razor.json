@@ -18620,6 +18620,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Batch 2\\Videos\\project_Meeting_room\\Project\\Pages\\Admin\\DetailRoom.cshtml",
+      "TargetPath": "Pages\\Admin\\DetailRoom.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Batch 2\\Videos\\project_Meeting_room\\Project\\Pages\\Logout.cshtml",
       "TargetPath": "Pages\\Logout.cshtml",
       "FileKind": "mvc"
