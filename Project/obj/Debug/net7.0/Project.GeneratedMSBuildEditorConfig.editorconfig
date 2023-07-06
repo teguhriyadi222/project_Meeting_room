@@ -24,6 +24,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRGVsZXRlUm9vbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/adam/BootcampFMLX/project_Meeting_room/Project/Pages/Admin/DetailRoom.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRGV0YWlsUm9vbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/adam/BootcampFMLX/project_Meeting_room/Project/Pages/Admin/EditRoom.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRWRpdFJvb20uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

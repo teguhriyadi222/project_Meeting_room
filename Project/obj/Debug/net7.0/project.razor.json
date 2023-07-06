@@ -18670,6 +18670,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "e:\\adam\\BootcampFMLX\\project_Meeting_room\\Project\\Pages\\Admin\\DetailRoom.cshtml",
+      "TargetPath": "Pages\\Admin\\DetailRoom.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "e:\\adam\\BootcampFMLX\\project_Meeting_room\\Project\\Pages\\Shared\\_Layout.cshtml",
       "TargetPath": "Pages\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
