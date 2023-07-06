@@ -15,10 +15,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = c:\Users\Batch 2\Videos\project_Meeting_room\Project
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/Batch 2/Videos/project_Meeting_room/Project/Pages/Admin/AddRoom.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQWRkUm9vbS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [c:/Users/Batch 2/Videos/project_Meeting_room/Project/Pages/Admin/DeleteRoom.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRGVsZXRlUm9vbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -29,10 +25,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [c:/Users/Batch 2/Videos/project_Meeting_room/Project/Pages/Admin/EditRoom.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRWRpdFJvb20uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[c:/Users/Batch 2/Videos/project_Meeting_room/Project/Pages/Admin/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [c:/Users/Batch 2/Videos/project_Meeting_room/Project/Pages/Admin/SelectRoom.cshtml]
@@ -71,9 +63,17 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-6t83zbcfz8
 
+[c:/Users/Batch 2/Videos/project_Meeting_room/Project/Pages/Admin/AddRoom.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQWRkUm9vbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-413e6vt8tu
+
 [c:/Users/Batch 2/Videos/project_Meeting_room/Project/Pages/Admin/Booking.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQm9va2luZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-xb59nlcvks
+
+[c:/Users/Batch 2/Videos/project_Meeting_room/Project/Pages/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-58zvaqe977
 
 [c:/Users/Batch 2/Videos/project_Meeting_room/Project/Pages/Booking.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va2luZy5jc2h0bWw=
