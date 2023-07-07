@@ -33,12 +33,12 @@
             <ul class="list-unstyled components">
                 <p>Booking Room System</p>
                 <li>
-                    <a href="/Home" title="Home">
+                    <a href="/User/Index" title="Home">
                         <i class="fas fa-home"></i><span class="menu-text">Home</span>
                     </a>
                 </li>
                 <li>
-                    <a href="User/Booking" title="Booking">
+                    <a href="/User/Booking" title="Booking">
                         <i class="fas fa-calendar"></i><span class="menu-text">Booking</span>
                     </a>
                 </li>
@@ -79,8 +79,8 @@
                                         style="width: 40px;" alt="Avatar" />
                                 </div>
                                 <div class="user-details">
-                                    <span class="username">@ViewData["Username"]</span>
-                                    <span class="role">Role</span>
+                                     <span class="username"> @Context.Session.GetString("UserName")</span>
+                                    <span class="role">@Context.Session.GetString("Role")</span>
                                 </div>
                                 <script>
                                     var user = @ViewData["Username"];

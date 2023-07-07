@@ -1,29 +1,53 @@
-var builder = WebApplication.CreateBuilder(args);
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
-// Add services to the container.
-builder.Services.AddRazorPages(options =>
+namespace Meeting
 {
-    options.RootDirectory = "/Pages";
-    options.Conventions.AddPageRoute("/Login", "");
-});
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            var host = Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.ConfigureServices((hostContext, services) =>
+                    {
+                        services.AddRazorPages(options =>
+                        {
+                            options.RootDirectory = "/Pages";
+                            options.Conventions.AddPageRoute("/Login", "");
+                        });
 
-var app = builder.Build();
+                        services.AddSession(options =>
+                        {
+                            
+                        });
+                    })
+                    .Configure((hostContext, app) =>
+                    {
+                        var env = hostContext.HostingEnvironment;
 
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
+                        if (!env.IsDevelopment())
+                        {
+                            app.UseExceptionHandler("/Error");
+                            app.UseHsts();
+                        }
+
+                        app.UseHttpsRedirection();
+                        app.UseStaticFiles();
+                        app.UseRouting();
+                        app.UseAuthorization();
+                        app.UseSession();
+                        app.UseEndpoints(endpoints =>
+                        {
+                            endpoints.MapRazorPages();
+                        });
+                    });
+                })
+                .Build();
+
+            host.Run();
+        }
+    }
 }
-
-app.UseHttpsRedirection();
-app.UseStaticFiles();
-
-app.UseRouting();
-
-app.UseAuthorization();
-
-app.MapRazorPages();
-
-app.Run();
