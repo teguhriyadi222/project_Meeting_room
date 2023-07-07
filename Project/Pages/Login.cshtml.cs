@@ -14,7 +14,6 @@ namespace Login.Pages
 
         public IActionResult OnGet()
         {
-            // Menghapus pesan error dari TempData saat memuat halaman
             TempData.Remove("ErrorMessage");
             return Page();
         }
@@ -29,6 +28,7 @@ namespace Login.Pages
                     HttpContext.Session.SetString("UserName", user.UserName);
                     HttpContext.Session.SetString("Role", user.Role);
                     TempData["UserName"] = user.UserName;
+                    TempData["Role"] = user.Role;
                     ViewData["Username"] = user.UserName;
                     ViewData["Role"] = user.Role;
 

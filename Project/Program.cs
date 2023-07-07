@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using UserData;
 
 namespace Meeting
 {
@@ -23,6 +24,7 @@ namespace Meeting
                         {
                             
                         });
+                        services.AddSingleton<UserRepository>();
                     })
                     .Configure((hostContext, app) =>
                     {
@@ -43,11 +45,25 @@ namespace Meeting
                         {
                             endpoints.MapRazorPages();
                         });
+                        // CreateUser(app);
                     });
                 })
                 .Build();
 
             host.Run();
         }
+        // private static void CreateUser(IApplicationBuilder app)
+        // {
+        //     var user = app.ApplicationServices.GetRequiredService<UserRepository>();
+
+        //     User newUser = new User
+        //     {
+        //         UserName = "Shella",
+        //         Password = "12345",
+        //         Role = "Admin",
+        //     };
+
+        //     user.CreateUser(newUser);
+        // }
     }
 }

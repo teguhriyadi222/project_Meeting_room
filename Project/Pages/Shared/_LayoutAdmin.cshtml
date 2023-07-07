@@ -18,6 +18,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
         integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
@@ -51,6 +52,11 @@
                 <li>
                     <a href="/Admin/SelectRoom" title="Select Room">
                         <i class="fas fa-list"></i><span class="menu-text">Select Room</span>
+                    </a>
+                </li>
+                 <li>
+                    <a href="/Admin/ListUser" title="Select Room">
+                        <i class="fas fa-users"></i><span class="menu-text">List Users</span>
                     </a>
                 </li>
                 <li>
@@ -90,8 +96,8 @@
                                         style="width: 40px;" alt="Avatar" />
                                 </div>
                                 <div class="user-details">
-                                    <span class="username"> @Context.Session.GetString("UserName")</span>
-                                    <span class="role">@Context.Session.GetString("Role")</span>
+                                    <span class="username"> @TempData.Peek("UserName")</span>
+                                    <span class="role">@TempData.Peek("Role")</span>
                                 </div>
                                 <script>
                                     var user = @ViewData["Username"];
