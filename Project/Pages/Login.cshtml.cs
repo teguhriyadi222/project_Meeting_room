@@ -26,6 +26,9 @@ namespace Login.Pages
                 var user = context.Users.FirstOrDefault(u => u.UserName == Username && u.Password == Password);
                 if (user != null)
                 {
+                    HttpContext.Session.SetString("UserName", user.UserName);
+                    HttpContext.Session.SetString("Role", user.Role);
+                    TempData["UserName"] = user.UserName;
                     ViewData["Username"] = user.UserName;
                     ViewData["Role"] = user.Role;
 

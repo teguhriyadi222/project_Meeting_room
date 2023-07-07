@@ -90,8 +90,8 @@
                                         style="width: 40px;" alt="Avatar" />
                                 </div>
                                 <div class="user-details">
-                                    <span class="username">@ViewData["Username"]</span>
-                                    <span class="role">Role</span>
+                                    <span class="username"> @Context.Session.GetString("UserName")</span>
+                                    <span class="role">@Context.Session.GetString("Role")</span>
                                 </div>
                                 <script>
                                     var user = @ViewData["Username"];
