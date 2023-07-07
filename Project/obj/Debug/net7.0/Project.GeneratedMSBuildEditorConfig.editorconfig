@@ -28,10 +28,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/tanshaella/Documents/finalproject/project_Meeting_room/Project/Pages/Logout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTG9nb3V0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [/home/tanshaella/Documents/finalproject/project_Meeting_room/Project/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -42,6 +38,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/home/tanshaella/Documents/finalproject/project_Meeting_room/Project/Pages/User/Booking.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlci9Cb29raW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tanshaella/Documents/finalproject/project_Meeting_room/Project/Pages/User/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlci9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tanshaella/Documents/finalproject/project_Meeting_room/Project/Pages/User/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlci9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tanshaella/Documents/finalproject/project_Meeting_room/Project/Pages/User/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlci9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/tanshaella/Documents/finalproject/project_Meeting_room/Project/Pages/User/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlci9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/tanshaella/Documents/finalproject/project_Meeting_room/Project/Pages/User/Index.cshtml]

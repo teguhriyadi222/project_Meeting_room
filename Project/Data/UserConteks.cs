@@ -1,13 +1,23 @@
-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using UserData;
-
-public class UserContext : DbContext
+namespace UserContext
 {
-    public DbSet<User> Users { get; set; }
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    public class UserConteks : DbContext
     {
-        optionsBuilder.UseSqlite("Data Source = User.db");
+        public UserConteks (DbContextOptions<UserConteks> options)
+            : base(options)
+        {
+        }
+
+	protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+	{
+		optionsBuilder.UseSqlite("Data Source = User.db");
+	}
+
+        public DbSet<UserData.UserLogin> UserLogin { get; set; } = default!;
     }
 }

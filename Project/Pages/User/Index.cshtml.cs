@@ -4,66 +4,70 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.Extensions.Logging;
-using GoogleAuth;
-using Google.Apis.Calendar.v3.Data;
-using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+using UserData;
+using UserContext;
 
 namespace Project.Pages.User
 {
-    public class Index : PageModel
+    public class IndexModel : PageModel
     {
-        [BindProperty(SupportsGet = true)]
-        public string? SearchString { get; set;}
-        public SelectList? Rooms { get; set;}
-        [BindProperty(SupportsGet = true)]
-        public string? Room { get; set;}
-        public string ListCalendar = "&src=id.indonesian%23holiday%40group.v.calendar.google.com";
+        private readonly UserConteks _context;
 
+        public IndexModel(UserConteks context)
+        {
+            _context = context;
+        }
+
+        public IList<UserLogin> UserLogin { get;set; } = default!;
+
+	[BindProperty(SupportGet = true)]
+	public string SearchString { get; set; }
+
+	public SelectList? Email { get; set; }
+
+	[BindProperty(SupportGet = true)]
+	public string? UserLoginEmail { get; set; }
+
+	
+	[BindProperty(SupportGet = true)]
+        public string SearchString { get; set; }
+
+        public SelectList? Role { get; set; }
+
+        [BindProperty(SupportGet = true)]
+        public string? UserLoginRole { get; set; }
+
+	
+//	[BindProperty(SupportGet = true)]
+//        public string SearchString { get; set; }
+
+//        public SelectList? Id { get; set; }
+
+//        [BindProperty(SupportGet = true)]
+//        public string? UserLoginId { get; set; }
 
         public async Task OnGetAsync()
         {
-            var service = GoogleCredential.CreateCredential();
-            CalendarList calendarList = service.CalendarList.List().Execute();
-            IEnumerable<CalendarListEntry> roomList = calendarList.Items.Where(c => c.Description != null);
-            roomList = roomList.Where(c => c.Description.Contains("Ruang"));
+		IQueryable<string> emailQuery = from m in _context.UserLogin
+			orderby m.Email
+			select m.Email;
+		
+		var userlogin = from m in _context.UserLogin
+			select m;
+		if (!string.IsNullOrEmpty(SearchString))
+		{
+			userlogin = userlogin.Where(s => s.Email.Contains(SearchString));
+		}
+		Emails = new SelectList(await emailQuery.Distinct().ToListAsync());
 
-            if (!string.IsNullOrEmpty(Room))
-            {
-                // filter based on size
-                foreach (CalendarListEntry room in roomList)
-                {
-                    if (room.Description.Contains(Room))
-                    {
-                        ArrangeLink(room.Id);
-                    }
-                }
-            }
-            if(!string.IsNullOrEmpty(SearchString))
-            {
-                // filter 
-                foreach (CalendarListEntry room in roomList)
-                {
-                    if (room.Description.Contains(SearchString) || room.Summary.Contains(SearchString))
-                    {
-                        ArrangeLink(room.Id);
-                    }
-                }
-            }
-            if (string.IsNullOrEmpty(Room)&&string.IsNullOrEmpty(SearchString)) {
-                foreach (CalendarListEntry room in roomList)
-                {
-                    ArrangeLink(room.Id);
-                }
-            }
+		UserLogin = await userlogin.ToListAsync();
 
-        }
-
-        public void ArrangeLink(string link)
-        {
-            string src = "&src=";
-            ListCalendar = ListCalendar + src + link;
+		
+//            if (_context.UserLogin != null)
+//            {
+//                UserLogin = await _context.UserLogin.ToListAsync();
+//            }
         }
     }
-    
 }

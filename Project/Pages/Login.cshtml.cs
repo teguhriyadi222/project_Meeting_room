@@ -1,13 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-
+using UserContext;
 
 namespace Login.Pages
 {
     public class LoginModel : PageModel
     {
         [BindProperty]
-        public string Username { get; set; }
+        public string Email { get; set; }
 
         [BindProperty]
         public string Password { get; set; }
@@ -21,15 +21,15 @@ namespace Login.Pages
 
         public IActionResult OnPost()
         {
-            using (var conteks = new UserContext())
+            using (var conteks = new UserConteks())
             {
-                var user = conteks.Users.FirstOrDefault(u => u.UserName == Username && u.Password == Password);
+                var user = conteks.UserLogin.FirstOrDefault(u => u.Email == Email && u.Password == Password);
                 if (user != null)
                 {
-                    ViewData["Username"] = user.UserName;
+                    ViewData["Email"] = user.Email;
                     ViewData["Role"] = user.Role;
 
-                    Console.WriteLine(user.UserName);
+                    Console.WriteLine(user.Email);
                     Console.WriteLine(user.Role);
                     return RedirectToPage("/Admin/Index");
                 }

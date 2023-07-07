@@ -1,4 +1,11 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using UserContext;
+using UserData;
+
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<UserConteks>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("UserConteks") ?? throw new InvalidOperationException("Connection string 'UserConteks' not found.")));
 
 // Add services to the container.
 builder.Services.AddRazorPages(options =>
@@ -8,6 +15,13 @@ builder.Services.AddRazorPages(options =>
 });
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+	var services = scope.ServiceProvider;
+
+	SeedData.Initialize(services);
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
