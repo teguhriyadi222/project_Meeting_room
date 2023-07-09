@@ -11,6 +11,12 @@ public class UserRepository
         _userContext = new UserContext();
     }
 
+    public User GetUser(int userId)
+    {
+        return _userContext.Users.FirstOrDefault(u => u.UserId == userId);
+    }
+
+
     public void CreateUser(User newUser)
     {
         _userContext.Add(newUser);
@@ -30,6 +36,12 @@ public class UserRepository
             _userContext.Users.Remove(user);
             _userContext.SaveChanges();
         }
+    }
+
+    public void UpdateUser(User user)
+    {
+        _userContext.Users.Update(user);
+        _userContext.SaveChanges();
     }
 
 

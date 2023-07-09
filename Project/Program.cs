@@ -22,7 +22,7 @@ namespace Meeting
 
                         services.AddSession(options =>
                         {
-                            
+
                         });
                         services.AddSingleton<UserRepository>();
                     })
@@ -44,6 +44,13 @@ namespace Meeting
                         app.UseEndpoints(endpoints =>
                         {
                             endpoints.MapRazorPages();
+                            endpoints.MapPost("/Index/DeleteUser", async context =>
+                            {
+                                var userRepository = context.RequestServices.GetRequiredService<UserRepository>();
+                                var userId = int.Parse(context.Request.Form["userId"]);
+                                userRepository.DeleteUser(userId);
+                                context.Response.Redirect("/Index");
+                            });
                         });
                         // CreateUser(app);
                     });
