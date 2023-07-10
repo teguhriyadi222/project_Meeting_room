@@ -21,12 +21,29 @@
                 </div>
         </div>     
         <div class="mb-3">
+
             <label for="exampleFormControlTextarea1" class="form-label">Description</label>
-            <textarea asp-for="Description" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        <div class="mb-3 btn">
+            <select asp-for="Description" class="form-select form-control" id="exampleFormControlTextarea1" rows="3">
+                <option value="">--Select Room--</option>
+                <option value="Ruangan Besar">Ruangan Besar(>10)</option>
+                <option value="Ruangan Sedang">Ruangan Sedang (5-10) </option>
+                <option value="Ruangan Kecil" >Ruangan Kecil (<5) </option>
+            </select>
+        </div>              
+            <div class="mb-3 btn">
             <button type="submit" value="booking" class="btn-blue">Create</button>
-        </div>
-    </form>
+             </div> 
+    </form>    
+        @if (!string.IsNullOrEmpty(Model.Notifications))
+        {
+
+            @if (Model.Notifications.Contains("Error"))
+            {
+                            <div class="alert alert-danger" role="alert">
+                            @TempData.Peek("Notifications");
+                            </div>
+            }
+        }
+
 </div>
 </main>

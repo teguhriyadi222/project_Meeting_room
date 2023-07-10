@@ -9,105 +9,105 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Project
 build_property.RootNamespace = Project
-build_property.ProjectDir = E:\adam\BootcampFMLX\project_Meeting_room\Project\
+build_property.ProjectDir = c:\Users\Batch 2\Documents\project_Meeting_room\Project\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\adam\BootcampFMLX\project_Meeting_room\Project
+build_property.MSBuildProjectDirectory = c:\Users\Batch 2\Documents\project_Meeting_room\Project
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/adam/BootcampFMLX/project_Meeting_room/Project/Pages/Error.cshtml]
+[c:/Users/Batch 2/Documents/project_Meeting_room/Project/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/adam/BootcampFMLX/project_Meeting_room/Project/Pages/Logout.cshtml]
+[c:/Users/Batch 2/Documents/project_Meeting_room/Project/Pages/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nb3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/adam/BootcampFMLX/project_Meeting_room/Project/Pages/Privacy.cshtml]
+[c:/Users/Batch 2/Documents/project_Meeting_room/Project/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/adam/BootcampFMLX/project_Meeting_room/Project/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/Batch 2/Documents/project_Meeting_room/Project/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/adam/BootcampFMLX/project_Meeting_room/Project/Pages/_ViewImports.cshtml]
+[c:/Users/Batch 2/Documents/project_Meeting_room/Project/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/adam/BootcampFMLX/project_Meeting_room/Project/Pages/_ViewStart.cshtml]
+[c:/Users/Batch 2/Documents/project_Meeting_room/Project/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/adam/BootcampFMLX/project_Meeting_room/Project/Pages/Account.cshtml]
+[c:/Users/Batch 2/Documents/project_Meeting_room/Project/Pages/Account.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-6t83zbcfz8
 
-[E:/adam/BootcampFMLX/project_Meeting_room/Project/Pages/Admin/AddRoom.cshtml]
+[c:/Users/Batch 2/Documents/project_Meeting_room/Project/Pages/Admin/AddRoom.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQWRkUm9vbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-413e6vt8tu
 
-[E:/adam/BootcampFMLX/project_Meeting_room/Project/Pages/Admin/Booking.cshtml]
+[c:/Users/Batch 2/Documents/project_Meeting_room/Project/Pages/Admin/Booking.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQm9va2luZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-xb59nlcvks
 
-[E:/adam/BootcampFMLX/project_Meeting_room/Project/Pages/Admin/CreadUser.cshtml]
+[c:/Users/Batch 2/Documents/project_Meeting_room/Project/Pages/Admin/CreadUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ3JlYWRVc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = b-waj2c7c9c0
 
-[E:/adam/BootcampFMLX/project_Meeting_room/Project/Pages/Admin/DeleteEvent.cshtml]
+[c:/Users/Batch 2/Documents/project_Meeting_room/Project/Pages/Admin/DeleteEvent.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRGVsZXRlRXZlbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-2lbobo3si3
 
-[E:/adam/BootcampFMLX/project_Meeting_room/Project/Pages/Admin/DeleteRoom.cshtml]
+[c:/Users/Batch 2/Documents/project_Meeting_room/Project/Pages/Admin/DeleteRoom.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRGVsZXRlUm9vbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-xvj6x5wazt
 
-[E:/adam/BootcampFMLX/project_Meeting_room/Project/Pages/Admin/DetailRoom.cshtml]
+[c:/Users/Batch 2/Documents/project_Meeting_room/Project/Pages/Admin/DetailRoom.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRGV0YWlsUm9vbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-b9xrs0210o
 
-[E:/adam/BootcampFMLX/project_Meeting_room/Project/Pages/Admin/EditRoom.cshtml]
+[c:/Users/Batch 2/Documents/project_Meeting_room/Project/Pages/Admin/EditRoom.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRWRpdFJvb20uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-msslqexog3
 
-[E:/adam/BootcampFMLX/project_Meeting_room/Project/Pages/Admin/Index.cshtml]
+[c:/Users/Batch 2/Documents/project_Meeting_room/Project/Pages/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-58zvaqe977
 
-[E:/adam/BootcampFMLX/project_Meeting_room/Project/Pages/Admin/ListUser.cshtml]
+[c:/Users/Batch 2/Documents/project_Meeting_room/Project/Pages/Admin/ListUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cTGlzdFVzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-zmc0nsi0e1
 
-[E:/adam/BootcampFMLX/project_Meeting_room/Project/Pages/Admin/SelectRoom.cshtml]
+[c:/Users/Batch 2/Documents/project_Meeting_room/Project/Pages/Admin/SelectRoom.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cU2VsZWN0Um9vbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-w7iw7bdqnh
 
-[E:/adam/BootcampFMLX/project_Meeting_room/Project/Pages/Booking.cshtml]
+[c:/Users/Batch 2/Documents/project_Meeting_room/Project/Pages/Booking.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va2luZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-d5vw4x6be6
 
-[E:/adam/BootcampFMLX/project_Meeting_room/Project/Pages/Login.cshtml]
+[c:/Users/Batch 2/Documents/project_Meeting_room/Project/Pages/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-wu0a6q50pk
 
-[E:/adam/BootcampFMLX/project_Meeting_room/Project/Pages/Shared/_Layout.cshtml]
+[c:/Users/Batch 2/Documents/project_Meeting_room/Project/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-27ma7xtkuc
 
-[E:/adam/BootcampFMLX/project_Meeting_room/Project/Pages/Shared/_LayoutAdmin.cshtml]
+[c:/Users/Batch 2/Documents/project_Meeting_room/Project/Pages/Shared/_LayoutAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-9kw94phtxe
 
-[E:/adam/BootcampFMLX/project_Meeting_room/Project/Pages/Shared/_LoginLayout.cshtml]
+[c:/Users/Batch 2/Documents/project_Meeting_room/Project/Pages/Shared/_LoginLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-s9cbx9smym
 
-[E:/adam/BootcampFMLX/project_Meeting_room/Project/Pages/User/Booking.cshtml]
+[c:/Users/Batch 2/Documents/project_Meeting_room/Project/Pages/User/Booking.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxCb29raW5nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = b-h90kgtsfvc
 
-[E:/adam/BootcampFMLX/project_Meeting_room/Project/Pages/User/Index.cshtml]
+[c:/Users/Batch 2/Documents/project_Meeting_room/Project/Pages/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-euww02ozok

@@ -18,6 +18,8 @@ namespace Project.Pages.Admin
         [BindProperty(SupportsGet = true)]
         public string Description { get; set;}
 
+        public string Notifications { get; set;}
+
         public async Task<IActionResult> OnPostAsync()
         {
 
@@ -27,17 +29,24 @@ namespace Project.Pages.Admin
             {
                 if (calendar.Summary == Name)
                 {
-                    return RedirectToPage("/Admin/AddRoom");
+                    TempData["Notifications"] = "Error: Room with the same name alredy exists";
+                    TempData.Peek("Notifications");
+                    Notifications = (String)TempData["Notifications"];
+                    Console.WriteLine(TempData["Notifications"]);
+                    Console.WriteLine("Room :" + Notifications);
+                    return Page();
                 }
             }
-
 
             Calendar newRoom = new Calendar();
             newRoom.Summary = Name;
             newRoom.Description = Description;
             service.Calendars.Insert(newRoom).Execute();
-
+            TempData["Notifications"] = "Room has been created successfully";
+            TempData.Peek("Notifications");
+            Notifications = (String)TempData["Notifications"];
             return RedirectToPage("/Admin/Index");
         } 
+       
     }
 }
