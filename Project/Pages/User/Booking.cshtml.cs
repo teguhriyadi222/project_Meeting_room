@@ -33,7 +33,7 @@ namespace Project.Pages.User
             var service = GoogleCredential.CreateCredential();
             CalendarList calendarList = service.CalendarList.List().Execute();
             IEnumerable<CalendarListEntry> roomList = calendarList.Items.Where(c => c.Description != null);
-            roomList = roomList.Where(c => c.Description.Contains("Ruang"));
+            roomList = roomList.Where(c => c.Description.ToLower().Contains("ruang"));
             IEnumerable<string> room = roomList.Select(c => c.Summary);
 
             Rooms = new SelectList(room);
@@ -80,7 +80,7 @@ namespace Project.Pages.User
             };
             service.Events.Insert(newEvent, Id).Execute();
 
-            return RedirectToPage("/User");
+            return RedirectToPage("/User/Index");
         } 
     }
 }

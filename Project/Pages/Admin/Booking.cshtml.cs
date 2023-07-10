@@ -41,7 +41,6 @@ namespace Project.Pages.Admin
         }
         public async Task<IActionResult> OnPostAsync()
         {
-          
 
             var service = GoogleCredential.CreateCredential();
             CalendarList calendarList = service.CalendarList.List().Execute();
