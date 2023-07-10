@@ -3,10 +3,13 @@
 @{
     ViewData["Title"] = "EditRoom";
 }
+@{
+    Layout = "/Pages/Shared/_LayoutAdmin.cshtml";
+}
 
-<h1>@ViewData["Title"]</h1>
-
-<div>
+<h1 class="title">@ViewData["Title"]</h1>
+<main>
+<div class='container'>
     <div>
     <h3>Edit this</h3>
 
@@ -26,7 +29,9 @@
         <input type="hidden" asp-for="Id" />
         @* <input type="Text" asp-for="Name" />
         <input type="text" asp-for="Description" /> *@
-        <input type="submit" value="Edit" class="btn btn-primary" /> |
+        <input type="submit" value="Edit" class="btn-blue" /> |
         <a asp-page="/Admin/SelectRoom">Back to List</a>
     </form>
 </div>
+</div>
+</main>

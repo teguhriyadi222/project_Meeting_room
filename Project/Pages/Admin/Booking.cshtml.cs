@@ -80,7 +80,7 @@ namespace Project.Pages.Admin
             };
             service.Events.Insert(newEvent, Id).Execute();
 
-            return RedirectToPage("/User");
+            return RedirectToPage("/Admin/Index");
         } 
     }
 }

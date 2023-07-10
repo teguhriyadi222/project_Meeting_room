@@ -7,14 +7,18 @@
     ViewData["Title"] = "SelectRoom";
 }
 
-<h1>@ViewData["Title"]</h1>
+<h1 class="title">@ViewData["Title"]</h1>
+<div class='container'>
 
 <div>
-    <table class="table">
+    <table class="table table-striped">
     <thead>
         <tr>
-            <th>
+            <th scope="col">
                 Room Name
+            </th>
+             <th scope="col">
+               Action
             </th>
         </tr>
     </thead>
@@ -26,7 +30,7 @@
             </td>
             <td>
                 <a asp-page="/Admin/EditRoom" asp-route-id="@item.Id">Edit</a> |
-                <a asp-page="/Admin/DeleteRoom" asp-route-id="@item.Id">Delete</a>
+                <a asp-page="/Admin/DeleteRoom" asp-route-id="@item.Id">Delete</a> |
                 <a asp-page="/Admin/DetailRoom" asp-route-id="@item.Id">Detail</a>
             </td>
         </tr>
@@ -34,4 +38,5 @@
     </tbody>
 </table>
 
+</div>
 </div>
