@@ -39,9 +39,14 @@
 
             @if (Model.Notifications.Contains("Error"))
             {
-                            <div class="alert alert-danger" role="alert">
-                            @TempData.Peek("Notifications");
-                            </div>
+                    <div class="alert alert-danger" role="alert">
+                    @TempData.Peek("Notifications");
+                     </div>
+            }else
+            {
+                <div class="alert alert-success" role="alert">
+                    @TempData.Peek("Notifications");
+                     </div>
             }
         }
 

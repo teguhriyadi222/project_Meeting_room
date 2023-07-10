@@ -45,7 +45,7 @@ namespace Project.Pages.Admin
             TempData["Notifications"] = "Room has been created successfully";
             TempData.Peek("Notifications");
             Notifications = (String)TempData["Notifications"];
-            return RedirectToPage("/Admin/Index");
+            return Page();
         } 
        
     }
