@@ -21,7 +21,7 @@ namespace Project.Pages.Admin
             var service = GoogleCredential.CreateCredential();
             CalendarList calendarList = service.CalendarList.List().Execute();
             IEnumerable<CalendarListEntry> roomList = calendarList.Items.Where(c => c.Description != null);
-            Rooms = roomList.Where(c => c.Description.Contains("Ruang"));
+            Rooms = roomList.Where(c => c.Description.ToLower().Contains("ruang"));
             //IEnumerable<string> room = roomList.Select(c => c.Summary).Order();
 
         }

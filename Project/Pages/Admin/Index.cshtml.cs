@@ -26,14 +26,14 @@ namespace Project.Pages.Admin
             var service = GoogleCredential.CreateCredential();
             CalendarList calendarList = service.CalendarList.List().Execute();
             IEnumerable<CalendarListEntry> roomList = calendarList.Items.Where(c => c.Description != null);
-            roomList = roomList.Where(c => c.Description.Contains("Ruang"));
+            roomList = roomList.Where(c => c.Description.ToLower().Contains("ruang"));
 
             if (!string.IsNullOrEmpty(Room))
             {
                 // filter based on size
                 foreach (CalendarListEntry room in roomList)
                 {
-                    if (room.Description.Contains(Room))
+                    if (room.Description.ToLower().Contains(Room.ToLower()))
                     {
                         ArrangeLink(room.Id);
                     }
@@ -44,7 +44,7 @@ namespace Project.Pages.Admin
                 // filter 
                 foreach (CalendarListEntry room in roomList)
                 {
-                    if (room.Description.Contains(SearchString) || room.Summary.Contains(SearchString))
+                    if (room.Description.ToLower().Contains(SearchString.ToLower()) || room.Summary.ToLower().Contains(SearchString.ToLower()))
                     {
                         ArrangeLink(room.Id);
                     }

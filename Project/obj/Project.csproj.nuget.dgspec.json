@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Batch 2\\Documents\\project_Meeting_room\\Project\\Project.csproj": {}
+    "E:\\adam\\BootcampFMLX\\project_Meeting_room\\Project\\Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Batch 2\\Documents\\project_Meeting_room\\Project\\Project.csproj": {
+    "E:\\adam\\BootcampFMLX\\project_Meeting_room\\Project\\Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Batch 2\\Documents\\project_Meeting_room\\Project\\Project.csproj",
+        "projectUniqueName": "E:\\adam\\BootcampFMLX\\project_Meeting_room\\Project\\Project.csproj",
         "projectName": "Project",
-        "projectPath": "C:\\Users\\Batch 2\\Documents\\project_Meeting_room\\Project\\Project.csproj",
-        "packagesPath": "C:\\Users\\Batch 2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Batch 2\\Documents\\project_Meeting_room\\Project\\obj\\",
+        "projectPath": "E:\\adam\\BootcampFMLX\\project_Meeting_room\\Project\\Project.csproj",
+        "packagesPath": "C:\\Users\\ADAM ARDI\\.nuget\\packages\\",
+        "outputPath": "E:\\adam\\BootcampFMLX\\project_Meeting_room\\Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Batch 2\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ADAM ARDI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -74,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

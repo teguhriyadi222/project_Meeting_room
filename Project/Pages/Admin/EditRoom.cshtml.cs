@@ -16,7 +16,9 @@ namespace Project.Pages.Admin
         public Calendar Rooms = new Calendar();
         public string? RoomId {get; set;}
         public string Id {get; set;}
+        [BindProperty]
         public string? Name {get; set;}
+        [BindProperty]
         public string? Description {get; set;}
         public async Task<IActionResult> OnGetAsync(string? id)
         {
@@ -54,8 +56,6 @@ namespace Project.Pages.Admin
             {
                 if (room.Id == id)
                 {
-                    //Name = room.Summary;
-                    //Description = room.Description;
                     Id = room.Id;
                     Rooms.ETag = room.ETag;
                     Rooms.Kind = room.Kind;
@@ -71,7 +71,8 @@ namespace Project.Pages.Admin
             Rooms.Id = Id;
             Rooms.Summary = Name;
             Rooms.Description = Description;
-            Console.WriteLine("summary = " + Name);
+            Console.WriteLine("summary = " + Name +" ||"+ Rooms.Summary );
+            Console.WriteLine("description = " + Description + "||" + Rooms.Description );
             service.Calendars.Update(Rooms, Id).Execute();
             return RedirectToPage("/Admin/SelectRoom");
         }
